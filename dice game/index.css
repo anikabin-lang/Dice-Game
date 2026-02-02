@@ -1,0 +1,106 @@
+•⁠  ⁠{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #c0392b, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+main {
+  width: 900px;
+  height: 400px;
+  background-color: #e7b6c1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* Player sections */
+.player {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.player--0 {
+  background-color: #efc1ca;
+  border-radius: 15px 0 0 15px;
+}
+
+.player--1 {
+  background-color: #d29aa7;
+  border-radius: 0 15px 15px 0;
+}
+
+/* Player name */
+.name {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Score */
+.score {
+  font-size: 60px;
+  color: #c0396b;
+  margin-bottom: 40px;
+}
+
+/* Current box */
+.current {
+  background-color: #c0396b;
+  color: white;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.current-label {
+  font-size: 14px;
+}
+
+.current-score {
+  font-size: 28px;
+}
+
+/* Dice */
+.dice {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+/* Buttons */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Button positions */
+.btn--new {
+  top: 20px;
+}
+
+.btn--roll {
+  bottom: 80px;
+}
+
+.btn--hold {
+  bottom: 30px;
+}
